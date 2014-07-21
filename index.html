@@ -12,53 +12,49 @@
         <meta property="og:description" content=""/>
         <meta property="og:url" content=""/>
         <meta property="og:image" content=""/>
-        <!--
-        <meta http-equiv="Pragma" content="no_cache">
-        <link rel="canonical" href=" "/>
-        -->
-        <!--[if lt IE 7 ]><meta content='0; url=ie6.html' http-equiv='refresh' /><![endif]-->
-        <link href="css/normalize.css" rel="stylesheet" />
-        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/stylesheet.css" rel="stylesheet" />
 
-        <!--[if gte IE 9]><!--> 
-        <link href="css/responsive.css" rel="stylesheet" /> 
-        <!--<![endif]--> 
-        <!--[if lt IE 9]>
-            <script src="js/libs/html5.js"></script>
-            <script src="js/libs/IE9.js" ></script>      
-        <![endif]-->
-
-        <title>title</title>
+        <title>poyen's website</title>
+        <style type="text/css">
+            video#bgvid {
+                position: fixed; right: 0; bottom: 0;
+                min-width: 100%; min-height: 100%;
+                width: auto; height: auto; z-index: -100;
+                background: url(images/test.jpg) no-repeat;
+                background-size: cover;
+                }
+        </style>
     </head>
     <body>
-        <header  role="banner" id="header-top">
+        <header>
             <div class="inner"> 
-                <nav role="navigation"></nav>
+                <nav>
+                    <ul>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
-        <main role="main" class="wrapper" >
+        <main>
             <div class="inner">
+
+                <video autoplay loop poster="images/test.jpg" id="bgvid">
+                    <source src="video/test.webm" type="video/webm">
+                    <source src="video/test.mp4" type="video/mp4">
+                </video>
 
             </div>
         </main>
-        <footer id="footer" role="contentinfo">
+        <footer>
             <div class="inner"> 
 
             </div>
         </footer>
-        <!--[if lt IE 9]>
-            <script src="js/libs/jquery-1.10.2.min.js"></script>
-        <![endif]-->
-        <!--[if gte IE 9]><!-->
-            <script src="js/libs/jquery-2.0.3.min.js"></script> 
-        <!--<![endif]--> 
 
-        <!--[if lt IE 9]>
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <![endif]--> 
-        <!--[if gte IE 9]><!--> 
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
-        <!--<![endif]--> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+        <script src="js/main.js" type="text/javascript" ></script>
 
     </body>
 </html>
