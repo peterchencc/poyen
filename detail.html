@@ -1,64 +1,34 @@
-<!DOCTYPE html>
-<!--[if IE 6]><html class="ie6 lte9 lte8 lte7" lang="zh-tw"><![endif]-->
-<!--[if IE 8]><html class="ie8 lte9 lte8" lang="zh-tw"><![endif]-->
-<!--[if IE 9]><html class="ie9 lte9" lang="zh-tw"><![endif]-->
-<!--[if IE 7]><html class="ie7 lte9 lte8 lte7" lang="zh-tw"><![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8) | !(IE 9)  ]><!--><html  lang="zh-tw"><!--<![endif]-->
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable:no" >
-        <meta property="og:title" content=""/>
-        <meta property="og:description" content=""/>
-        <meta property="og:url" content=""/>
-        <meta property="og:image" content=""/>
-        <!--
-        <meta http-equiv="Pragma" content="no_cache">
-        <link rel="canonical" href=" "/>
-        -->
-        <!--[if lt IE 7 ]><meta content='0; url=ie6.html' http-equiv='refresh' /><![endif]-->
-        <link href="css/normalize.css" rel="stylesheet" />
-        <link href="css/style.css" rel="stylesheet" />
 
-        <!--[if gte IE 9]><!--> 
-        <link href="css/responsive.css" rel="stylesheet" /> 
-        <!--<![endif]--> 
-        <!--[if lt IE 9]>
-            <script src="js/libs/html5.js"></script>
-            <script src="js/libs/IE9.js" ></script>      
-        <![endif]-->
+<!doctype html>
+<html lang=en>
+<head>
+<title>FullScreen HTML5 Video In Pure CSS - demosthenes.info</title>
 
-        <title>title</title>
-    </head>
-    <body>
-        <header  role="banner" id="header-top">
-            <div class="inner"> 
-                <nav role="navigation"></nav>
-            </div>
-        </header>
-        <main role="main" class="wrapper" >
-            <div class="inner">
 
-            </div>
-        </main>
-        <footer id="footer" role="contentinfo">
-            <div class="inner"> 
+<style>body{margin:0;background:transparent;}video{position:fixed;right:0;bottom:0;min-width:100%;min-height:100%;width:auto;height:auto;z-index:-100;background:url('/assets/images/polina.jpg') no-repeat;background-size:cover;}div{font-family:Agenda-Light,Agenda Light,Agenda,Arial Narrow,sans-serif;font-weight:100;background:rgba(0,0,0,0.3);color:white;padding:2rem;width:33%;margin:2rem;float:right;font-size:1.2rem;}h1{font-size:3rem;text-transform:uppercase;margin-top:0;letter-spacing:.3rem;}a{display:inline-block;color:#fff;text-decoration:none;background:rgba(0,0,0,0.5);padding:.5rem;transition:.6s background;}a:hover{background:rgba(0,0,0,0.9);}@media screen and (max-width: 500px) {div{width:50%;}}
+</style>
+<meta charset=utf-8>
 
-            </div>
-        </footer>
-        <!--[if lt IE 9]>
-            <script src="js/libs/jquery-1.10.2.min.js"></script>
-        <![endif]-->
-        <!--[if gte IE 9]><!-->
-            <script src="js/libs/jquery-2.0.3.min.js"></script> 
-        <!--<![endif]--> 
 
-        <!--[if lt IE 9]>
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <![endif]--> 
-        <!--[if gte IE 9]><!--> 
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
-        <!--<![endif]--> 
-
-    </body>
+</head>
+<body>
+<video autoplay loop poster="images/test.jpg" id="bgvid">
+<source src="http://poyen-test.net63.net/video/test.webm" type="video/webm">
+<source src="http://poyen-test.net63.net/video/test.mp4" type="video/mp4">
+</video>
+<div id="polina">
+<h1>Polina</h1>
+<p>filmed by Alexander Wagner 2011
+<p><a href="/blog/777/Create-Fullscreen-HTML5-Page-Background-Video">return to article</a>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.
+<p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl. Aenean sem risus, auctor in sodales vehicula, commodo et nulla. Aenean tincidunt pulvinar purus at cursus. Nunc sed justo vel velit fermentum dignissim eu eget enim. Vestibulum nulla diam, euismod eget mauris ut, euismod accumsan turpis. Aenean ultricies scelerisque quam, in sodales lectus condimentum eu. Suspendisse potenti. Donec sed volutpat lorem. Aliquam in lacus laoreet, malesuada purus eu, semper mauris. In nec libero semper, sagittis elit in, pellentesque est. Quisque orci velit, accumsan eu adipiscing eu, cursus non libero. Proin sed aliquam nibh. Mauris tincidunt urna at ultrices pharetra.
+</div>
+<script>
+var video = document.getElementById("bgvideo");
+video.addEventListener('touchstart', function(e) {
+e.preventDefault();
+video.play();
+}
+</script>
+</body>
 </html>
