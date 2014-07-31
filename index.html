@@ -16,6 +16,18 @@
 
         <title>poyen's website</title>
         <style type="text/css">
+        body{
+
+            background-image:url(images/bg_01.jpg); 
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+            background-position: center center; 
+            min-width: 100%; min-height: 100%;
+            width: auto; height: auto;
+            background-size: cover;
+
+        }
+
             video#bgvideo {
                 position: fixed; right: 0; bottom: 0;
                 min-width: 100%; min-height: 100%;
@@ -23,15 +35,24 @@
                 background: url(images/bg_01.jpg) no-repeat;
                 background-size: cover;
                 }
+                #header{
+                    width:280px;
+                    padding: 10px 0 10px 50px;
+                    
+                }
 #title {
+width: 200px;
 color: white;
+border:1px solid ; 
+padding: 10px;
+margin: 20px 0 20px 0;
 font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px;
+    padding: 0px;
     color: white;
 }
 
@@ -48,15 +69,15 @@ font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     </head>
     <body>
         <header>
-            <div style="text-align:center">
-                <h1 id="title">WANGPOYEN</h1>
+            <div id="header">
+                <h1 id="title">poyen wang:</h1>
 
                 <nav>
                     <ul>
-                        <li><a href="#">WORK</a></li>|
-                        <li><a href="#">NEWS</a></li>|
-                        <li><a href="#">BIOGRAPHY</a></li>|
-                        <li><a href="#">CONTACT</a></li>
+                        | <li><a href="#">NEWS</a></li> |
+                        <li><a href="#">FILMS</a></li> |
+                        <li><a href="#">PHOTOS</a></li> |
+                        <li><a href="#">ABOUT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -64,9 +85,9 @@ font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
         <main>
             <div class="inner">
 
-                <video autoplay muted loop poster="images/bg_01.jpg" id="bgvideo">
-                    <source src="http://poyen-test.net63.net/video/home_720p.webm" type="video/webm">
-                    <source src="http://poyen-test.net63.net/video/home_720p.mp4" type="video/mp4">
+                <video autoplay muted loop poster="images/bg_01_240.jpg" id="bgvideo">
+                    <source src="http://poyen-test.net63.net/video/home_240.webm" type="video/webm">
+                    <source src="http://poyen-test.net63.net/video/home_240.mp4" type="video/mp4">
                 </video>
 
             </div>
