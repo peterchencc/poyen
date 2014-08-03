@@ -16,39 +16,28 @@
 
         <title>poyen's website</title>
         <style type="text/css">
-
-        body{
-
-            background-image:url(images/bg_01.jpg); 
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+               background-image:url(images/bg_01.jpg); 
             background-repeat: no-repeat; 
             background-attachment: fixed;
             background-position: center center; 
             background-size: cover;
-            /*min-width: 100%; min-height: 100%;*/
-            width: auto; 
-            height:100%;
-            margin:0;
-            padding:0;
-        }
-        #id_wrapper {
-            /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
-            min-height: 100%;
-            /* 位置設為relative, 作為footer區塊位置的參考 */
-            position: relative;
-        }
-        video#bgvideo {
-            position: fixed; right: 0; bottom: 0;
-            min-width: 100%; min-height: 100%;
-            width: auto; height: auto; z-index: -100;
-            background: url(images/bg_01.jpg) no-repeat; 
-            background-size: cover;
-        }
-        #header{
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+           background:#ff0;
+           padding:10px;
             height: 110px;
-            width:280px;
+            width:auto;
             padding: 10px 0 10px 50px;
-            
-        }
+}
         #header a{
             text-decoration:none;
         }
@@ -76,13 +65,24 @@
             text-decoration:none;
             font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
         }
-                    /*@media screen and (max-width: 500px) {div{width:50%;}}*/
-        </style>
-    </head>
-    <body>
-        <div id="id_wrapper">
-
-            <div id="header">
+#body {
+    background:#000;
+               
+   padding:10px;
+   padding-bottom:0;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:0;   /* Height of the footer */
+   background:#6cf;
+}
+  </style>
+</head>
+<body>
+  <div id="container">
+           <div id="header">
                 <a href="index.html" >
                     <h1 id="title">poyen wang:</h1>
                 </a>
@@ -96,26 +96,8 @@
                     </ul>
                 </nav>
             </div>
-
-            <div>
-
-                <video autoplay muted loop poster="images/bg_01_240.jpg" id="bgvideo">
-                    <source src="http://poyen-test.net63.net/video/home_240.webm" type="video/webm">
-                    <source src="http://poyen-test.net63.net/video/home_240.mp4" type="video/mp4">
-                </video>
-
-            </div>
-        </div>
-
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
-        <script src="js/main.js" type="text/javascript" ></script>
-        <!--script>
-        var video = document.getElementById("bgvideo");
-        video.addEventListener('touchstart', function(e) {
-        e.preventDefault();
-        video.play();
-        }
-        </script-->
-    </body>
+   <div id="body"></div>
+   <div id="footer"></div>
+</div>
+</body>
 </html>
